@@ -39,6 +39,18 @@ class StyleObject
         return this;
     }
 
+    setFontSize(fontSize: string | number)
+    {
+        this.style.fontSize = fontSize;
+        return this;
+    }
+
+    setMargin(margin: string | number)
+    {
+        this.style.margin = margin;
+        return this;
+    }
+
     setBasics(width: string | number, height: string | number, left: string | number, top: string | number)
     {
         this.style.width = width;

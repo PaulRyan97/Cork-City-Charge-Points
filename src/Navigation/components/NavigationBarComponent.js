@@ -11,12 +11,15 @@ import MapIcon from "@material-ui/icons/Map";
 import ChargerIcon from "@material-ui/icons/EvStation";
 import FavouriteIcon from "@material-ui/icons/Favorite";
 import StyleObject from "../../Utils/StyleObject";
+import {APP_TABS, switchAppTab} from "../actions/navigationActions";
 
 type NavigationBarComponentPropsType =
 {
     //From Parent
     //From mapStateToProps
+    currentTab: APP_TABS,
     //From matchDispatchToProps
+    switchAppTab: Function
     //Other
 };
 
@@ -32,13 +35,26 @@ const NavigationBarComponent = (props: NavigationBarComponentPropsType) =>
 {
     return (
         <BottomNavigation
-            value={1}
+            value={props.currentTab}
+            onChange={(event, value) =>
+            {
+                props.switchAppTab(value)
+            }}
             style={bottomNavBarStyle}
             showLabels={true}
         >
-            <BottomNavigationAction label={"Map View"} icon={<MapIcon/>}/>
-            <BottomNavigationAction label={"Chargers"} icon={<ChargerIcon/>}/>
-            <BottomNavigationAction label={"Favourites"} icon={<FavouriteIcon/>}/>
+            <BottomNavigationAction
+                value={APP_TABS.MAP_VIEW}
+                label={"Map View"}
+                icon={<MapIcon/>}/>
+            <BottomNavigationAction
+                value={APP_TABS.CHARGER_VIEW}
+                label={"Chargers"}
+                icon={<ChargerIcon/>}/>
+            <BottomNavigationAction
+                value={APP_TABS.FAVOURITES_VIEW}
+                label={"Favourites"}
+                icon={<FavouriteIcon/>}/>
         </BottomNavigation>
     );
 };
@@ -47,12 +63,14 @@ const NavigationBarComponent = (props: NavigationBarComponentPropsType) =>
 const mapStateToProps = (store) =>
 {
     return {
+        currentTab: store.navigationState.currentTab
     }
 };
 
 const matchDispatchToProps = (dispatch) =>
 {
     return bindActionCreators({
+        switchAppTab: switchAppTab
     }, dispatch)
 };
 

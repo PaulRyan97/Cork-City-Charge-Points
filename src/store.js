@@ -5,9 +5,11 @@
 import {combineReducers, applyMiddleware, createStore} from "redux";
 import thunk from "redux-thunk";
 import {createLogger} from "redux-logger";
+import navigationReducer from "./Navigation/reducers/navigationReducer";
 
 //again, overkill but more reducers will come
 const reducers = combineReducers({
+    navigationState: navigationReducer
 });
 
 let builtLogger = createLogger({

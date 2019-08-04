@@ -7,6 +7,7 @@ import StyleObject from "./Utils/StyleObject";
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import {theme} from "./theme";
 import NavigationBarComponent from "./Navigation/components/NavigationBarComponent";
+import HeaderBarComponent from "./Navigation/components/HeaderComponent";
 
 type AppComponentPropsType =
 {
@@ -26,7 +27,8 @@ class App extends Component<AppComponentPropsType>{
         return(
             <MuiThemeProvider theme={theme}>
                 <div style={appStyle}>
-                <NavigationBarComponent/>
+                    <HeaderBarComponent/>
+                    <NavigationBarComponent/>
                 </div>
             </MuiThemeProvider>
         );
