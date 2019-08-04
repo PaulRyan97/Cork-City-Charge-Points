@@ -4,6 +4,9 @@
 // @flow
 import React, { Component} from "react";
 import StyleObject from "./Utils/StyleObject";
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import {theme} from "./theme";
+import NavigationBarComponent from "./Navigation/components/NavigationBarComponent";
 
 type AppComponentPropsType =
 {
@@ -13,14 +16,19 @@ type AppComponentPropsType =
     //Other
 };
 
-const testStyle = new StyleObject().getStyle();
+const appStyle = new StyleObject()
+    .setBasics("100%", "100%", 0, 0 )
+    .setPosition("absolute")
+    .getStyle();
 
 class App extends Component<AppComponentPropsType>{
     render(){
         return(
-            <div>
-                <h1 style={testStyle}> Welcome </h1>
-            </div>
+            <MuiThemeProvider theme={theme}>
+                <div style={appStyle}>
+                <NavigationBarComponent/>
+                </div>
+            </MuiThemeProvider>
         );
     }
 }
