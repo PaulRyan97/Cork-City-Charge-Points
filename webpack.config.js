@@ -8,6 +8,7 @@ const webpack = require("webpack");
 module.exports = {
     entry: "./src/index.js",
     mode: "development",
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -31,6 +32,14 @@ module.exports = {
                 use: {
                     loader: 'file-loader',
                 }
+            },
+            {
+                test: /\.(eot|ttf|woff|woff2|otf)$/,
+                loader: 'file-loader',
+            },
+            {
+                test: /\.css$/,
+                loader: "style-loader!css-loader"
             }
         ]
     },
@@ -39,7 +48,6 @@ module.exports = {
             template: "./src/index.html",
             filename: "./index.html"
         }),
-        new webpack.HotModuleReplacementPlugin()
     ],
     resolve: { extensions: ["*", ".js", ".jsx"] },
     output: {

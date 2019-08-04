@@ -1,13 +1,25 @@
 /**
  * Created by Paul on 03/08/2019.
  */
+// @flow
 import React, { Component} from "react";
+import StyleObject from "./Utils/StyleObject";
 
-class App extends Component{
+type AppComponentPropsType =
+{
+    //From Parent
+    //From mapStateToProps
+    //From matchDispatchToProps
+    //Other
+};
+
+const testStyle = new StyleObject().getStyle();
+
+class App extends Component<AppComponentPropsType>{
     render(){
         return(
             <div>
-                <h1> Welcome </h1>
+                <h1 style={testStyle}> Welcome </h1>
             </div>
         );
     }

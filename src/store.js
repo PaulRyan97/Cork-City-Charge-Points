@@ -1,6 +1,7 @@
 /**
  * Created by Paul on 04/08/2019.
  */
+//@flow
 import {combineReducers, applyMiddleware, createStore} from "redux";
 import thunk from "redux-thunk";
 import {createLogger} from "redux-logger";
