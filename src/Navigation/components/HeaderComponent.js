@@ -8,6 +8,7 @@ import {bindActionCreators} from "redux";
 import StyleObject from "../../Utils/StyleObject";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from '@material-ui/icons/Menu';
+import {HEADER_BAR_HEIGHT} from "../../Constants/STYLE_CONSTANTS";
 
 type HeaderBarComponentPropsType =
     {
@@ -21,7 +22,8 @@ const headerBarStyle = new StyleObject()
     .setWidth("100%")
     .setPosition("sticky")
     .setDisplay("flex")
-    .setHeight(64)
+    .setTop(0)
+    .setHeight(HEADER_BAR_HEIGHT)
     .getStyle();
 
 const titleStyle = new StyleObject()

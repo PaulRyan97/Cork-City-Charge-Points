@@ -51,6 +51,42 @@ class StyleObject
         return this;
     }
 
+    setMarginBottom(marginBottom: string | number)
+    {
+        this.style.marginBottom = marginBottom;
+        return this;
+    }
+
+    setMarginTop(marginTop: string | number)
+    {
+        this.style.marginTop = marginTop;
+        return this;
+    }
+
+    setMarginLeft(marginLeft: string | number)
+    {
+        this.style.marginLeft = marginLeft
+        return this;
+    }
+
+    setPadding(padding: string | number)
+    {
+        this.style.padding = padding;
+        return this;
+    }
+
+    setPaddingTop(paddingTop: string | number)
+    {
+        this.style.paddingTop = paddingTop;
+        return this;
+    }
+
+    setPaddingBottom(paddingBottom: string | number)
+    {
+        this.style.paddingBottom = paddingBottom;
+        return this;
+    }
+
     setBasics(width: string | number, height: string | number, left: string | number, top: string | number)
     {
         this.style.width = width;
@@ -96,6 +132,12 @@ class StyleObject
         return this;
     }
 
+    setBorderRadius(radius: string | number)
+    {
+        this.style.borderRadius = radius;
+        return this;
+    }
+
     setBorderTop(borderTop: string)
     {
         this.style.borderTop = borderTop;
@@ -105,6 +147,36 @@ class StyleObject
     setBoxShadow(boxShadow: string)
     {
         this.style.boxShadow = boxShadow;
+        return this;
+    }
+
+    setOverflow(overflow: string)
+    {
+        this.style.overflow = overflow;
+        return this;
+    }
+
+    setOverflowX(overflowX: string)
+    {
+        this.style.overflowX = overflowX;
+        return this;
+    }
+
+    setOverflowY(overflowY: string)
+    {
+        this.style.overflowY = overflowY;
+        return this;
+    }
+
+    setWhiteSpace(whitespace: string)
+    {
+        this.style.whiteSpace = whitespace;
+        return this;
+    }
+
+    setTextOverflow(overflow: string)
+    {
+        this.style.textOverflow = overflow;
         return this;
     }
 

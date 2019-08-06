@@ -3,6 +3,8 @@ import {connect} from "react-redux";
 import React from "react";
 import type {ChargePoint} from "../actions/chargePointPageActions";
 import ChargePointCardComponent from "./ChargePointCardComponent";
+import StyleObject from "../../Utils/StyleObject";
+import {HEADER_BAR_HEIGHT, NAV_BAR_HEIGHT, SMALL_PADDING} from "../../Constants/STYLE_CONSTANTS";
 
 /**
  * Created by Paul on 05/08/2019.
@@ -19,6 +21,13 @@ type ChargePointPageComponentPropsType =
 };
 
 
+const chargePointPageStyle = new StyleObject()
+    .setHeight("calc(100% - " + (NAV_BAR_HEIGHT + HEADER_BAR_HEIGHT + (SMALL_PADDING * 2)) + "px)")
+    .setOverflowY("auto")
+    .setPaddingTop(SMALL_PADDING)
+    .setPaddingBottom(SMALL_PADDING)
+    .getStyle();
+
 
 const ChargePointPageComponent = (props: ChargePointPageComponentPropsType) =>
 {
@@ -29,7 +38,7 @@ const ChargePointPageComponent = (props: ChargePointPageComponentPropsType) =>
     });
 
     return (
-        <div>
+        <div style={chargePointPageStyle}>
             {chargePointCards}
         </div>
     );

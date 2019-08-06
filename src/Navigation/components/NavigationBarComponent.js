@@ -13,6 +13,7 @@ import FavouriteIcon from "@material-ui/icons/Favorite";
 import StyleObject from "../../Utils/StyleObject";
 import {APP_TABS, switchAppTab} from "../actions/navigationActions";
 import type {APP_TABS_TYPE} from "../actions/navigationActions";
+import {NAV_BAR_HEIGHT} from "../../Constants/STYLE_CONSTANTS";
 
 type NavigationBarComponentPropsType =
 {
@@ -26,8 +27,8 @@ type NavigationBarComponentPropsType =
 
 const bottomNavBarStyle = new StyleObject()
     .setWidth("100%")
-    .setPosition("absolute")
-    .setHeight(64)
+    .setPosition("sticky")
+    .setHeight(NAV_BAR_HEIGHT)
     .setBoxShadow("0 2px 2px 2px rgba( 0, 0, 0, 0.2)")
     .setBottom(0)
     .getStyle();
