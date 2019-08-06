@@ -3,11 +3,12 @@
  */
 import {APP_TABS, NAVIGATION_ACTION_TYPES} from "../actions/navigationActions";
 import {buildMultiActionReducer, Handler} from "../../Utils/MultiActionReducer";
+import type {APP_TABS_TYPE} from "../actions/navigationActions";
 
 // @flow
 export type NavigationState =
 {
-    currentTab: APP_TABS
+    currentTab: APP_TABS_TYPE
 }
 
 const defaultState =

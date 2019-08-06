@@ -12,9 +12,11 @@ export const APP_TABS =
     MAP_VIEW: "MAP_VIEW",
     CHARGER_VIEW: "CHARGER_VIEW",
     FAVOURITES_VIEW: "FAVOURITES_VIEW"
-}
+};
 
-export const switchAppTab = (tab: APP_TABS) =>
+export type APP_TABS_TYPE = $Keys<typeof APP_TABS>;
+
+export const switchAppTab = (tab: APP_TABS_TYPE) =>
 {
     return {type: NAVIGATION_ACTION_TYPES.SWITCH_APP_TAB, tab: tab};
 };

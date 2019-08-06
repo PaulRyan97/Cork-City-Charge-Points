@@ -1,0 +1,430 @@
+[
+  {
+    "ID": 1,
+    "Name": "Copley Street, Cork",
+    "Details": "1 charge point with facility to charge 4 cars",
+    "Long": -8.46768289796164,
+    "Latitude": 51.8951778567994,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 2,
+    "Name": "Copley Street, Opposite Keohans Funeral Home, Cork",
+    "Details": "1 charge point with facility to charge 2 cars",
+    "Long": -8.46768289796164,
+    "Latitude": 51.8951778567994,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 3,
+    "Name": "Lower Glanmire Road, Cork City",
+    "Details": "1 charge point with facility to charge 2 cars",
+    "Long": -8.45649558034883,
+    "Latitude": 51.9024754024261,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 4,
+    "Name": "South Mall (opp no 41), Cork City",
+    "Details": "1 charge point with facility to charge 2 cars",
+    "Long": -8.47335349073475,
+    "Latitude": 51.8963441827223,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 5,
+    "Name": "Black Ash Park & Ride, Off South Link Road, Cork",
+    "Details": "1 charge point with facility to charge 2 cars",
+    "Long": -8.46650266978178,
+    "Latitude": 51.8785884274526,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 6,
+    "Name": "Cork Institute of Technology",
+    "Details": "1 charge point with facility to charge 2 cars",
+    "Long": -8.53461811430965,
+    "Latitude": 51.8859740483233,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 7,
+    "Name": "Cork County Hall",
+    "Details": "1 charge point with facility to charge 2 cars",
+    "Long": -8.50772821768268,
+    "Latitude": 51.8928978823019,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 8,
+    "Name": "Kent Station",
+    "Details": "1 charge point with facility to charge 2 cars",
+    "Long": -8.45664310976961,
+    "Latitude": 51.9021679399292,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 9,
+    "Name": "Paul Street Multi Storey Car Park",
+    "Details": "Type-2 AC Socket 3.7kW Slow Charger (x2 spaces)",
+    "Long": -8.47482896550408,
+    "Latitude": 51.899790322481,
+    "Type": "Standard",
+    "Operator": "Cork City Council",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 10,
+    "Name": "North Main Street Multi Storey Car Park",
+    "Details": "Type-2 AC Socket 3.7kW Slow Charger (x2 spaces)",
+    "Long": -8.47794257029627,
+    "Latitude": 51.9008095813471,
+    "Type": "Standard",
+    "Operator": "Cork City Council",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 11,
+    "Name": "City Hall Q-park Multi Storey Car Park",
+    "Details": "Type-2 AC Socket 3.7kW Slow Charger (x2 spaces)",
+    "Long": -8.4643651150885,
+    "Latitude": 51.8964500716616,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 12,
+    "Name": "Grand Parade Q-park Multi Storey Car Park",
+    "Details": "Type-2 AC Socket 3.7kW Slow Charger (x2 spaces)",
+    "Long": -8.47434528650396,
+    "Latitude": 51.8965967400054,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 13,
+    "Name": "St. Finbarr�s Q-park Multi Storey Car Park",
+    "Details": "Type-2 AC Socket 3.7kW Slow Charger (x2 spaces)",
+    "Long": -8.48107162341642,
+    "Latitude": 51.8963712371735,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 14,
+    "Name": "Carrolls�s Quay Q-park Multi Storey Car Park",
+    "Details": "Type-2 AC Socket 3.7kW Slow Charger (x2 spaces)",
+    "Long": -8.4722857918156,
+    "Latitude": 51.9017415593558,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 15,
+    "Name": "Musgrave Group HQ, Ballycureen",
+    "Details": "Type-2 AC Socket 22kW Charger (x2 spaces)",
+    "Long": -8.4749220121029,
+    "Latitude": 51.8674462120282,
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 22
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 16,
+    "Name": "Deasey�s Topaz Service Station, Commons Road",
+    "Details": "CHAdeMO DC 45kW (1 space), Combo DC 45kW (1 space), AC (Type-2) 43kW (1 space)",
+    "Long": -8.48252216814,
+    "Latitude": 51.9197753599228,
+    "Type": "Fast Charge",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "DC",
+          "ChargeSpeed": 45
+        },
+        {
+          "type": "DC",
+          "ChargeSpeed": 45
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 43
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 17,
+    "Name": "Esso/Centra , Rochestown Road",
+    "Details": "CHAdeMO DC 45kW (1 space), Combo DC 45kW (1 space), AC (Type-2) 43kW (1 space)",
+    "Long": -8.3954039516364,
+    "Latitude": 51.8769996521065,
+    "Type": "Fast Charge",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "DC",
+          "ChargeSpeed": 45
+        },
+        {
+          "type": "DC",
+          "ChargeSpeed": 45
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 43
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 18,
+    "Name": "Topaz Frankfield Service Station",
+    "Details": "CHAdeMO DC 45kW (1 space), AC (Type-2) 43kW (1 space)",
+    "Long": -8.47082780993981,
+    "Latitude": 51.8720983163551,
+    "Type": "Fast Charge",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "DC",
+          "ChargeSpeed": 45
+        },
+        {
+          "type": "AC",
+          "ChargeSpeed": 43
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 19,
+    "Name": "Nissan Fast Charge Point",
+    "Details": "CHAdeMO DC 50kW (Available)",
+    "Long": "",
+    "Latitude": "",
+    "Type": "Fast Charge",
+    "Operator": "Nissan",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "DC",
+          "ChargeSpeed": 50
+        }
+      ]
+    }]
+  },
+  {
+    "ID": 20,
+    "Name": "The River Lee Hotel",
+    "Details": "Type-2 AC Socket 3.7kW (Available)",
+    "Long": "",
+    "Latitude": "",
+    "Type": "Standard",
+    "Operator": "ESB ecars",
+    "Points": [{
+      "Sockets": [
+        {
+          "type": "AC",
+          "ChargeSpeed": 3.7
+        }
+      ]
+    }]
+  }
+]

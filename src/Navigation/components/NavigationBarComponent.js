@@ -12,12 +12,13 @@ import ChargerIcon from "@material-ui/icons/EvStation";
 import FavouriteIcon from "@material-ui/icons/Favorite";
 import StyleObject from "../../Utils/StyleObject";
 import {APP_TABS, switchAppTab} from "../actions/navigationActions";
+import type {APP_TABS_TYPE} from "../actions/navigationActions";
 
 type NavigationBarComponentPropsType =
 {
     //From Parent
     //From mapStateToProps
-    currentTab: APP_TABS,
+    currentTab: APP_TABS_TYPE,
     //From matchDispatchToProps
     switchAppTab: Function
     //Other
