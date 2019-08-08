@@ -27,11 +27,25 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(svg|png|PNG|jpg|jpeg|gif)$/,
+                test: /\.(png|PNG|jpg|jpeg|gif)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'file-loader',
                 }
+            },
+            {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: "babel-loader",
+                    },
+                    {
+                        loader: "react-svg-loader",
+                        options: {
+                            jsx: true // true outputs JSX tags
+                        }
+                    }
+                ]
             },
             {
                 test: /\.(eot|ttf|woff|woff2|otf)$/,

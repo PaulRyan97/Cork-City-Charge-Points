@@ -27,6 +27,12 @@ class StyleObject
         return this;
     }
 
+    setMinHeight(height: string | number)
+    {
+        this.style.minHeight = height;
+        return this;
+    }
+
     setDisplay(display: string)
     {
         this.style.display = display;
@@ -65,7 +71,13 @@ class StyleObject
 
     setMarginLeft(marginLeft: string | number)
     {
-        this.style.marginLeft = marginLeft
+        this.style.marginLeft = marginLeft;
+        return this;
+    }
+
+    setMarginRight(marginRight: string | number)
+    {
+        this.style.marginRight = marginRight;
         return this;
     }
 
@@ -177,6 +189,12 @@ class StyleObject
     setTextOverflow(overflow: string)
     {
         this.style.textOverflow = overflow;
+        return this;
+    }
+
+    setAlignItems(align: string)
+    {
+        this.style.alignItems = align;
         return this;
     }
 

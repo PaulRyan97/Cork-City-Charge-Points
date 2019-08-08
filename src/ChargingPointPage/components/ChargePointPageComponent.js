@@ -32,9 +32,9 @@ const chargePointPageStyle = new StyleObject()
 const ChargePointPageComponent = (props: ChargePointPageComponentPropsType) =>
 {
 
-    let chargePointCards = props.chargePoints.map((point: ChargePoint) =>
+    let chargePointCards = props.chargePoints.map((point: ChargePoint, index: number) =>
     {
-        return <ChargePointCardComponent chargePoint={point}/>
+        return <ChargePointCardComponent chargePoint={point} key={index}/>
     });
 
     return (
