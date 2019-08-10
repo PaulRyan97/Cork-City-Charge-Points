@@ -5,8 +5,8 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
 
-const aquaElectric = '#00796B';
-const grey = '#6B6B6B';
+export const aquaElectric = '#00796B';
+export const grey = '#6B6B6B';
 
 export const theme = createMuiTheme({
     palette: {

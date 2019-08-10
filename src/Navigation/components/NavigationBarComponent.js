@@ -27,7 +27,7 @@ type NavigationBarComponentPropsType =
 
 const bottomNavBarStyle = new StyleObject()
     .setWidth("100%")
-    .setPosition("sticky")
+    .setPosition("absolute")
     .setHeight(NAV_BAR_HEIGHT)
     .setBoxShadow("0 2px 2px 2px rgba( 0, 0, 0, 0.2)")
     .setBottom(0)

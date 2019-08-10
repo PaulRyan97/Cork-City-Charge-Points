@@ -22,6 +22,7 @@ const headerBarStyle = new StyleObject()
     .setWidth("100%")
     .setPosition("sticky")
     .setDisplay("flex")
+    .setBoxShadow("0px 2px 3px 1px rgba( 0, 0, 0, 0.1)")
     .setTop(0)
     .setHeight(HEADER_BAR_HEIGHT)
     .getStyle();

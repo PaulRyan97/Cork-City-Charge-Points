@@ -6,6 +6,11 @@ import StyleObject from "../../Utils/StyleObject";
 import {NORMAL_PADDING} from "../../Constants/STYLE_CONSTANTS";
 import EVStationIcon from "@material-ui/icons/EvStation";
 import PlugIcon from "../../Resources/images/plugIcon.svg";
+import DirectionsIcon from "@material-ui/icons/Directions";
+import FavouriteIcon from "@material-ui/icons/Favorite";
+import MoreMenuIcon from "@material-ui/icons/MoreVert";
+import {style} from "redux-logger/src/diff";
+import {grey} from "../../theme";
 
 /**
  * Created by Paul on 05/08/2019.
@@ -30,12 +35,14 @@ const chargePointCardStyle = new StyleObject()
     .setBorder("1px solid rgba(107,107,107, 0.2)")
     .setBoxShadow("0px 3px 5px 2px rgba( 0, 0, 0, 0.1)")
     .setBorderRadius(10)
+    .setColor(grey)
     .setPosition("relative")
     .getStyle();
 
 const nameStyle = new StyleObject()
     .setFontSize(20)
     .setWidth("60%")
+    .setColor("black")
     .setOverflow("auto")
     .setTextOverflow("ellipsis")
     .setWhiteSpace("nowrap")
@@ -84,6 +91,19 @@ const socketsDetailsStyle = new StyleObject()
     .setMarginBottom(10)
     .getStyle();
 
+const actionsStyle = new StyleObject()
+    .setDisplay("flex")
+    .setWidth("100%")
+    .setBottom(0)
+    .setJustifyContent("flex-end")
+    .setHeight(48)
+    .setAlignItems("center")
+    .getStyle();
+
+const iconStyle = new StyleObject()
+    .setMarginRight(10)
+    .getStyle();
+
 const ChargePointCardComponent = (props: ChargePointCardComponentPropsType) =>
 {
     let numSockets = 0;
@@ -124,15 +144,20 @@ const ChargePointCardComponent = (props: ChargePointCardComponentPropsType) =>
             <div style={pointInfoContainerStyle}>
                 <div style={pointsIconStyle}>
                 <EVStationIcon style={{marginRight: 5}}/>
-                {props.chargePoint.points.length}
+                    <b>{props.chargePoint.points.length}</b>
                 </div>
                 <div style={socketsIconStyle}>
-                <PlugIcon height={20} width={20} style={{marginRight: 5}}/>
-                {numSockets}
+                <PlugIcon height={20} width={20} fill={grey} style={{marginRight: 5}}/>
+                    <b>{numSockets}</b>
                 </div>
             </div>
             <div style={socketsDetailsStyle}>
                 {chargePointSummary}
+            </div>
+            <div style={actionsStyle}>
+                <DirectionsIcon style={iconStyle}/>
+                <FavouriteIcon style={iconStyle}/>
+                <MoreMenuIcon style={iconStyle}/>
             </div>
         </div>
     </div>

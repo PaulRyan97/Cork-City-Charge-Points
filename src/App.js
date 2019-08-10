@@ -12,11 +12,14 @@ import ChargePointPageComponent from "./ChargingPointPage/components/ChargePoint
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {readChargePointData} from "./ChargingPointPage/actions/chargePointPageActions";
+import type {APP_TABS_TYPE} from "./Navigation/actions/navigationActions";
+import {APP_TABS} from "./Navigation/actions/navigationActions";
 
 type AppComponentPropsType =
 {
     //From Parent
     //From mapStateToProps
+    currentTab: APP_TABS_TYPE,
     //From matchDispatchToProps
     readChargePointData: Function
     //Other
@@ -44,7 +47,8 @@ class App extends Component<AppComponentPropsType>{
             <MuiThemeProvider theme={theme}>
                 <div style={appStyle}>
                     <HeaderBarComponent/>
-                    <ChargePointPageComponent/>
+                    {this.props.currentTab === APP_TABS.CHARGER_VIEW ?
+                    <ChargePointPageComponent/> : null }
                     <NavigationBarComponent/>
                 </div>
             </MuiThemeProvider>
@@ -55,6 +59,7 @@ class App extends Component<AppComponentPropsType>{
 const mapStateToProps = (store) =>
 {
     return {
+        currentTab: store.navigationState.currentTab
     }
 };
 

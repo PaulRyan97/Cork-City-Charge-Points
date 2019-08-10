@@ -198,6 +198,18 @@ class StyleObject
         return this;
     }
 
+    setJustifyContent(justify: string)
+    {
+        this.style.justifyContent = justify;
+        return this;
+    }
+
+    setColor(color: string)
+    {
+        this.style.color = color;
+        return this;
+    }
+
     getStyle(): Object
     {
         return this.style;
