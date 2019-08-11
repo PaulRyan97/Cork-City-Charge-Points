@@ -8,6 +8,7 @@ const webpack = require("webpack");
 module.exports = {
     entry: "./src/index.js",
     mode: "development",
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -26,11 +27,33 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(svg|png|PNG|jpg|jpeg|gif)$/,
+                test: /\.(png|PNG|jpg|jpeg|gif)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'file-loader',
                 }
+            },
+            {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: "babel-loader",
+                    },
+                    {
+                        loader: "react-svg-loader",
+                        options: {
+                            jsx: true // true outputs JSX tags
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(eot|ttf|woff|woff2|otf)$/,
+                loader: 'file-loader',
+            },
+            {
+                test: /\.css$/,
+                loader: "style-loader!css-loader"
             }
         ]
     },
@@ -39,7 +62,6 @@ module.exports = {
             template: "./src/index.html",
             filename: "./index.html"
         }),
-        new webpack.HotModuleReplacementPlugin()
     ],
     resolve: { extensions: ["*", ".js", ".jsx"] },
     output: {
