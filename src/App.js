@@ -50,10 +50,8 @@ class App extends Component<AppComponentPropsType>{
                     {this.props.currentTab !== APP_TABS.MAP_VIEW ?
                         <HeaderBarComponent/> : null
                     }
-                    {this.props.currentTab === APP_TABS.CHARGER_VIEW ?
-                    <ChargePointPageComponent/> : null }
-                    {this.props.currentTab === APP_TABS.MAP_VIEW ?
-                    <MapPageView/> : null}
+                    <ChargePointPageComponent currentTab={this.props.currentTab}/>
+                    <MapPageView currentTab={this.props.currentTab}/>
                     <NavigationBarComponent/>
                 </div>
             </MuiThemeProvider>

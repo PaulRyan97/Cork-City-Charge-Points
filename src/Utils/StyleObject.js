@@ -192,6 +192,12 @@ class StyleObject
         return this;
     }
 
+    setOpacity(opacity: number)
+    {
+        this.style.opacity = opacity;
+        return this;
+    }
+
     setAlignItems(align: string)
     {
         this.style.alignItems = align;
@@ -207,6 +213,19 @@ class StyleObject
     setColor(color: string)
     {
         this.style.color = color;
+        return this;
+    }
+
+    setTransition(property: string, duration: number)
+    {
+        if(this.style.transition !== undefined)
+        {
+            this.style.transition = this.style.transition + ", "  + property + " " + duration + "s";
+        }
+        else
+        {
+            this.style.transition = property + " " + duration + "s";
+        }
         return this;
     }
 

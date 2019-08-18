@@ -6,24 +6,21 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import React from "react";
 import StyleObject from "../../Utils/StyleObject";
-import {NAV_BAR_HEIGHT} from "../../Constants/STYLE_CONSTANTS";
+import {NAV_BAR_HEIGHT, TRANSITION_SPEEDS} from "../../Constants/STYLE_CONSTANTS";
 import {MAPS_API_KEY} from "../../Constants/COMMON_CONSTANTS";
 import { Map, GoogleApiWrapper } from 'google-maps-react';
+import type {APP_TABS_TYPE} from "../../Navigation/actions/navigationActions";
+import {APP_TABS} from "../../Navigation/actions/navigationActions";
 
 
 type MapViewPageComponentPropsType =
     {
         //From Parent
+        currentTab: APP_TABS_TYPE
         //From mapStateToProps
         //From matchDispatchToProps
         //Other
     };
-
-
-const mapViewPageComponentStyle = new StyleObject()
-    .setHeight("calc(100% - " + NAV_BAR_HEIGHT+ "px)")
-    .setOverflowY("auto")
-    .getStyle();
 
 const mapStyle = new StyleObject()
     .setBasics("100%", "100%", 0 , 0)
@@ -31,6 +28,19 @@ const mapStyle = new StyleObject()
 
 const MapViewPageComponent = (props: MapViewPageComponentPropsType) =>
 {
+
+    let isCurrentTab = props.currentTab === APP_TABS.MAP_VIEW;
+
+    let mapViewPageComponentStyle = new StyleObject()
+        .setHeight("calc(100% - " + NAV_BAR_HEIGHT+ "px)")
+        .setWidth("100%")
+        .setLeft(isCurrentTab ? 0 : "-100%")
+        .setOpacity(isCurrentTab ? 1 : 0)
+        .setPosition("absolute")
+        .setTransition("left", TRANSITION_SPEEDS.NORMAL)
+        .setTransition("opacity", TRANSITION_SPEEDS.NORMAL)
+        .setOverflowY("auto")
+        .getStyle();
 
     return <div style={mapViewPageComponentStyle}>
             <Map
