@@ -397,8 +397,8 @@
     "ID": 19,
     "Name": "Nissan Fast Charge Point",
     "Details": "CHAdeMO DC 50kW (Available)",
-    "Long": "",
-    "Latitude": "",
+    "Long": -8.514769,
+    "Latitude": 51.893534,
     "Type": "Fast Charge",
     "Operator": "Nissan",
     "Points": [{
@@ -414,8 +414,8 @@
     "ID": 20,
     "Name": "The River Lee Hotel",
     "Details": "Type-2 AC Socket 3.7kW (Available)",
-    "Long": "",
-    "Latitude": "",
+    "Long": -8.485017,
+    "Latitude": 51.895985,
     "Type": "Standard",
     "Operator": "ESB ecars",
     "Points": [{

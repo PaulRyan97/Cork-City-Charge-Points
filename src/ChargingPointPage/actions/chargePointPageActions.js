@@ -52,7 +52,7 @@ export const readChargePointData = () =>
                 name: cp.Name,
                 details: cp.Details,
                 type: cp.Type,
-                location: {longitude: cp.Long, latitude: cp.latitude},
+                location: {longitude: cp.Long, latitude: cp.Latitude},
                 operator: cp.Operator,
                 points: cp.Points
             };

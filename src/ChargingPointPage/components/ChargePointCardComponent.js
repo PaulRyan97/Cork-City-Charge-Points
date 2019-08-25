@@ -11,6 +11,8 @@ import FavouriteIcon from "@material-ui/icons/Favorite";
 import MoreMenuIcon from "@material-ui/icons/MoreVert";
 import {style} from "redux-logger/src/diff";
 import {grey} from "../../theme";
+import {StaticGoogleMap, Marker as StaticMarker} from "react-static-google-map";
+import {MAPS_API_KEY} from "../../Constants/COMMON_CONSTANTS";
 
 /**
  * Created by Paul on 05/08/2019.
@@ -140,7 +142,11 @@ const ChargePointCardComponent = (props: ChargePointCardComponentPropsType) =>
         <div style={cardContentStyle}>
             <div style={nameStyle}><b>{props.chargePoint.name}</b></div>
             <div style={operatorStyle}>{props.chargePoint.operator}</div>
-            <div style={mapsThumbnailStyle}></div>
+            <div style={mapsThumbnailStyle}>
+                <StaticGoogleMap size={"100x100"} apiKey={MAPS_API_KEY} zoom={14}>
+                    <StaticMarker location={{lat: props.chargePoint.location.latitude, lng: props.chargePoint.location.longitude}}/>
+                </StaticGoogleMap>
+            </div>
             <div style={pointInfoContainerStyle}>
                 <div style={pointsIconStyle}>
                 <EVStationIcon style={{marginRight: 5}}/>
