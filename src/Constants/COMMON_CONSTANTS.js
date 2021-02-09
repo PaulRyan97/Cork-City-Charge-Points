@@ -3,6 +3,6 @@
  */
 // @flow
 
-export const MAPS_API_KEY = "AIzaSyAbEAdk9kB1eRTLJBenI3uZo95bV1B3GdM";
+export const MAPS_API_KEY = "";
 
-export const FREE_API_KEY = "AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo";
+export const FREE_API_KEY = "";
